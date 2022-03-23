@@ -1,1 +1,1 @@
-var Shade = window.open('./s/', 'window', 'location = no, titlebar = no, toolbar = no, menubar = no, resizable = yes');
+var Shade = window.open('./s/index.html', 'window', 'location = no, titlebar = no, toolbar = no, menubar = no, resizable = yes');

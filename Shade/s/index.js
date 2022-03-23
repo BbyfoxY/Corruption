@@ -3,7 +3,7 @@ function main() {
 	var t = document.createElement('h1');
 	var ta = document.createElement('a');
 	var tat = document.createTextNode('Shade');
-	ta.href = '../';
+	ta.href = '../index.html';
 	ta.appendChild(tat);
 	t.appendChild(ta);
 	title.appendChild(t);
