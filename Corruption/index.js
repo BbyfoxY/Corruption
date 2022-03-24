@@ -1,0 +1,1 @@
+var Corruption = window.open('./c/index.html', 'window', 'location = no, titlebar = no, toolbar = no, menubar = no, resizable = yes, width = 500, height = 500');

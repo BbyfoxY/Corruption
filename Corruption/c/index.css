@@ -1,0 +1,28 @@
+body {
+	margin: 0;
+	background: #222222;
+	font-family: 'Red Hat Mono', 'monospace';
+	color: #a00a0a;
+	text-align: center;
+}
+
+body a {
+	text-decoration: none;
+	color: #a00a0a;
+}
+
+#button {
+	color: #a00a0a;
+	background: #1a1a1a;
+	border-radius: 25px 25px 0px 0px;
+	border: 0px transparent;
+	cursor: pointer;
+	width: 2.5%;
+	height: 5vh;
+}
+
+#frame {
+	width: 0px;
+	height: 0px;
+	border: 0px transparent;
+}
