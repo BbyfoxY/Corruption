@@ -1,10 +1,7 @@
-var corrosionproxy = window.location.protocol + "//" + window.location.hostname + "/corrosion/server/request?url="
-
 window.onload = function() {
 	var s = document.getElementById('search');
 	s.addEventListener('keyup', function (e) {
 		if (e.keyCode === 13) {
-			console.log('s');
 			g(s.value);
 		}
 	});
@@ -18,7 +15,7 @@ window.onload = function() {
 			} else if (url.startsWith('http://')) {
 				o(url);
 			} else {
-				s(url);
+				//s(url);
 			}
 		} else {
 			return false;
@@ -27,12 +24,17 @@ window.onload = function() {
 
 	function o(url) {
 		var f = document.getElementById('frame');
+		var l = document.getElementById('loading');
 		f.style.width = 100 + '%';
 		f.style.height = 90 + 'vh';
-		f.setAttribute('src', gp(url));
+		f.style.zIndex = 2;
+		s.style.display = 'none';
+		setTimeout(() => {
+			f.setAttribute('src', gp(url));
+		}, 2000);
 	}
 
 	function gp(url) {
-		return corrosionproxy + url;
+		return 'https://testtsunami.bbyfoxy.repl.co/corrosion/gateway?url=' + url;
 	}
 }

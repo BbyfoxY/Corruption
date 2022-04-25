@@ -8,11 +8,13 @@
 		<title>Corruption</title>
 	</head>
 	<body>
-		<div id = 'title'>
-			<h1>Corruption</h1>
+		<div id = 'topbar'>
+			<h1 class = 'unselectable' id = 'title'>Corruption</h1>
+			<h2 class = 'unselectable' id = 'links'>Home Input Url</h2>
 		</div>
 		<div id = 'page'>
-			<input autofocus autocomplete = 'off' id = 'search' placeholder = 'Search or Type URL'></input>
+			<input autofocus autocomplete = 'off' id = 'search' placeholder = 'Type URL'></input>
+			<div id = 'loading'></div>
 			<iframe id = 'frame' src = ''></iframe>
 		</div>
 		<script src = './index.js'></script>
